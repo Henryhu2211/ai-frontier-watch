@@ -1,0 +1,103 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "search": "Search",
+    "searchPlaceholder": "Search AI news...",
+    "noResults": "No results found",
+    "readMore": "Read More",
+    "backToHome": "Back to Home",
+    "viewAll": "View All",
+    "share": "Share",
+    "copyLink": "Copy Link",
+    "page": "Page",
+    "of": "of"
+  },
+  "header": {
+    "home": "Home",
+    "categories": "Categories",
+    "search": "Search",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "language": "Language"
+  },
+  "home": {
+    "hero": {
+      "title": "AI Frontier Watch",
+      "subtitle": "Stay ahead of the AI revolution"
+    },
+    "breakingNews": {
+      "label": "Breaking News",
+      "title": "Latest Updates in Artificial Intelligence"
+    },
+    "categories": {
+      "title": "Explore by Category",
+      "viewAll": "View All Categories"
+    },
+    "trending": {
+      "title": "Trending Now",
+      "viewAll": "View All Trending"
+    },
+    "recentNews": {
+      "title": "Recent News"
+    }
+  },
+  "category": {
+    "title": "Category",
+    "allArticles": "All Articles",
+    "filter": "Filter",
+    "sortBy": "Sort by",
+    "newest": "Newest",
+    "oldest": "Oldest",
+    "mostRelevant": "Most Relevant"
+  },
+  "article": {
+    "readTime": "min read",
+    "publishedOn": "Published on",
+    "updatedOn": "Updated on",
+    "source": "Source",
+    "tags": "Related Tags",
+    "shareArticle": "Share this article",
+    "relatedArticles": "Related Articles",
+    "backToCategory": "Back to Category"
+  },
+  "search": {
+    "title": "Search Results",
+    "resultsFor": "Results for",
+    "noResults": "No articles found matching your search.",
+    "tryDifferent": "Try different keywords or browse our categories.",
+    "filters": {
+      "category": "Category",
+      "language": "Language",
+      "dateRange": "Date Range",
+      "clearAll": "Clear All"
+    }
+  },
+  "footer": {
+    "description": "Your trusted source for AI news and insights.",
+    "quickLinks": "Quick Links",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2026 AI Frontier Watch. All rights reserved."
+  },
+  "categories": {
+    "research": "Research",
+    "industry": "Industry",
+    "startups": "Startups",
+    "products": "Products",
+    "ethics": "Ethics & Safety",
+    "policy": "Policy",
+    "tutorials": "Tutorials",
+    "opinion": "Opinion"
+  },
+  "time": {
+    "justNow": "Just now",
+    "minutesAgo": "{count} minutes ago",
+    "hoursAgo": "{count} hours ago",
+    "daysAgo": "{count} days ago",
+    "weeksAgo": "{count} weeks ago"
+  }
+}

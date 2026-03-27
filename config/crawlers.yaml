@@ -1,0 +1,136 @@
+# AI Frontier Watch - Crawler Configuration
+
+# DeepL API
+DEEPL_API_KEY: "${DEEPL_API_KEY}"
+DEEPL_API_URL: "https://api-free.deepl.com/v2/translate"  # Free tier
+# DEEPL_API_URL: "https://api.deepl.com/v2/translate"  # Pro tier
+
+# Database (Supabase)
+SUPABASE_URL: "${SUPABASE_URL}"
+SUPABASE_ANON_KEY: "${SUPABASE_ANON_KEY}"
+SUPABASE_SERVICE_KEY: "${SUPABASE_SERVICE_KEY}"
+
+# Redis (Upstash)
+REDIS_URL: "${REDIS_URL}"
+REDIS_TOKEN: "${REDIS_TOKEN}"
+
+# Crawler Settings
+CRAWL_INTERVAL_HOURS: 4  # Run crawlers every 4 hours
+MAX_ARTICLES_PER_CRAWL: 100
+REQUEST_TIMEOUT_SECONDS: 30
+USER_AGENT: "AI-Frontier-Watch/1.0 (Research Bot; mailto:research@aifrontier.watch)"
+
+# arXiv Settings
+ARXIV_API_URL: "http://export.arxiv.org/api/query"
+ARXIV_CATEGORIES:
+  - "cs.AI"
+  - "cs.LG"
+ARXIV_MAX_RESULTS: 50
+
+# News Sources
+SOURCES:
+  venturebeat:
+    name: "VentureBeat AI"
+    base_url: "https://venturebeat.com"
+    ai_section: "/ai/"
+    rss_url: "https://venturebeat.com/ai/feed/"
+    
+  techcrunch:
+    name: "TechCrunch AI"
+    base_url: "https://techcrunch.com"
+    ai_section: "/section/artificial-intelligence/"
+    rss_url: "https://techcrunch.com/feed/"
+    
+  theverge:
+    name: "The Verge AI"
+    base_url: "https://www.theverge.com"
+    ai_section: "/ai-artificial-intelligence/"
+    rss_url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+
+# Classification Categories
+CLASSIFICATION:
+  llms:
+    keywords:
+      - "large language model"
+      - "llm"
+      - "gpt"
+      - "chatgpt"
+      - "claude"
+      - "gemini"
+      - "transformer"
+      - "instruction tuning"
+      - "rlhf"
+      - "prompt engineering"
+      - "text generation"
+      - "language model"
+    
+  vision:
+    keywords:
+      - "computer vision"
+      - "image recognition"
+      - "object detection"
+      - "semantic segmentation"
+      - "yolo"
+      - "stable diffusion"
+      - "dall-e"
+      - "image generation"
+      - "diffusion model"
+      - "gan"
+      - "vision transformer"
+      - "vit"
+    
+  safety:
+    keywords:
+      - "ai safety"
+      - "alignment"
+      - "rlhf"
+      - "constitutional ai"
+      - "responsible ai"
+      - "ai ethics"
+      - "bias"
+      - "fairness"
+      - "interpretability"
+      - "robustness"
+      - "adversarial"
+      - "trustworthy ai"
+      - "xai"
+    
+  research:
+    keywords:
+      - "arxiv"
+      - "paper"
+      - "research"
+      - "benchmark"
+      - "dataset"
+      - "neural network"
+      - "architecture"
+      - "training"
+      - "fine-tuning"
+      - "pre-training"
+      - "emergent"
+      - "涌现"
+    
+  industry:
+    keywords:
+      - "funding"
+      - "investment"
+      - "startup"
+      - "acquisition"
+      - "merger"
+      - "ipo"
+      - "partnership"
+      - "launch"
+      - "product"
+      - "release"
+      - "enterprise"
+      - "deployment"
+
+# Translation Retry Settings
+TRANSLATION_RETRY:
+  max_attempts: 3
+  backoff_seconds: [1, 5, 30]  # Exponential backoff
+  daily_retry_hour: 3  # 3 AM daily retry
+
+# Logging
+LOG_LEVEL: "INFO"
+LOG_FORMAT: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

@@ -1,0 +1,103 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "error": "发生错误",
+    "retry": "重试",
+    "search": "搜索",
+    "searchPlaceholder": "搜索人工智能新闻...",
+    "noResults": "未找到结果",
+    "readMore": "阅读更多",
+    "backToHome": "返回首页",
+    "viewAll": "查看全部",
+    "share": "分享",
+    "copyLink": "复制链接",
+    "page": "第",
+    "of": "页，共"
+  },
+  "header": {
+    "home": "首页",
+    "categories": "分类",
+    "search": "搜索",
+    "darkMode": "深色模式",
+    "lightMode": "浅色模式",
+    "language": "语言"
+  },
+  "home": {
+    "hero": {
+      "title": "AI前沿观察",
+      "subtitle": "走在人工智能革命的前沿"
+    },
+    "breakingNews": {
+      "label": "突发新闻",
+      "title": "人工智能最新动态"
+    },
+    "categories": {
+      "title": "按分类浏览",
+      "viewAll": "查看所有分类"
+    },
+    "trending": {
+      "title": "热门话题",
+      "viewAll": "查看更多热门"
+    },
+    "recentNews": {
+      "title": "最新资讯"
+    }
+  },
+  "category": {
+    "title": "分类",
+    "allArticles": "全部文章",
+    "filter": "筛选",
+    "sortBy": "排序",
+    "newest": "最新",
+    "oldest": "最早",
+    "mostRelevant": "最相关"
+  },
+  "article": {
+    "readTime": "分钟阅读",
+    "publishedOn": "发布于",
+    "updatedOn": "更新于",
+    "source": "来源",
+    "tags": "相关标签",
+    "shareArticle": "分享这篇文章",
+    "relatedArticles": "相关文章",
+    "backToCategory": "返回分类"
+  },
+  "search": {
+    "title": "搜索结果",
+    "resultsFor": "搜索结果",
+    "noResults": "未找到与您的搜索匹配的文章。",
+    "tryDifferent": "请尝试不同的关键词或浏览我们的分类。",
+    "filters": {
+      "category": "分类",
+      "language": "语言",
+      "dateRange": "日期范围",
+      "clearAll": "清除全部"
+    }
+  },
+  "footer": {
+    "description": "您值得信赖的人工智能新闻与资讯来源。",
+    "quickLinks": "快速链接",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "copyright": "© 2026 AI前沿观察. 保留所有权利。"
+  },
+  "categories": {
+    "research": "研究",
+    "industry": "行业",
+    "startups": "初创公司",
+    "products": "产品",
+    "ethics": "伦理与安全",
+    "policy": "政策",
+    "tutorials": "教程",
+    "opinion": "观点"
+  },
+  "time": {
+    "justNow": "刚刚",
+    "minutesAgo": "{count}分钟前",
+    "hoursAgo": "{count}小时前",
+    "daysAgo": "{count}天前",
+    "weeksAgo": "{count}周前"
+  }
+}
