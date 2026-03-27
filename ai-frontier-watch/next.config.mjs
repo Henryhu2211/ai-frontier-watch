@@ -1,22 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'picsum.photos',
-      },
-    ],
+    unoptimized: true,
   },
-  i18n: {
-    locales: ['en', 'zh'],
-    defaultLocale: 'en',
-    localeDetection: false,
-  },
+  trailingSlash: true,
 }
 
 export default nextConfig
