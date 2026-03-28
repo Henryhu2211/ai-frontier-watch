@@ -217,6 +217,8 @@ function getCategoryNameZh(slug: string): string {
     policy: '政策',
     tutorials: '教程',
     opinion: '观点',
+    forum: '行业论坛',
+    claw: 'Claw前沿科技',
   }
   return names[slug] || slug
 }
@@ -231,6 +233,8 @@ function getCategoryDescription(slug: string): string {
     policy: 'AI regulations and government policies',
     tutorials: 'Learn AI development step by step',
     opinion: 'Expert opinions and analysis',
+    forum: 'Latest AI industry news from forums, social media, and communities',
+    claw: 'OpenClaw, QClaw, EasyClaw, Zhipu and other Claw products, skills, agents',
   }
   return descriptions[slug] || ''
 }
@@ -245,6 +249,8 @@ function getCategoryDescriptionZh(slug: string): string {
     policy: '人工智能法规和政府政策',
     tutorials: '一步步学习人工智能开发',
     opinion: '专家观点和分析',
+    forum: '来自论坛、社交媒体和社区的最新AI行业资讯',
+    claw: 'OpenClaw、QClaw、EasyClaw、质谱等Claw产品，skills、agents前沿科技',
   }
   return descriptions[slug] || ''
 }

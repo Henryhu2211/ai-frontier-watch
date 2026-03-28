@@ -25,6 +25,8 @@ export default function Header() {
   const categories = [
     { slug: 'research', href: '/category/research' },
     { slug: 'industry', href: '/category/industry' },
+    { slug: 'forum', href: '/category/forum' },
+    { slug: 'claw', href: '/category/claw' },
     { slug: 'startups', href: '/category/startups' },
     { slug: 'products', href: '/category/products' },
     { slug: 'ethics', href: '/category/ethics' },

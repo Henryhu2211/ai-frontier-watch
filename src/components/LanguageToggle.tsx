@@ -1,16 +1,14 @@
 'use client'
 
-import { useRouter, usePathname } from 'next/navigation'
 import { useTranslation } from 'next-i18next'
 
 /**
  * LanguageToggle Component
  * Toggle between English and Chinese languages
+ * Uses client-side only language switching (no URL changes)
  */
 export default function LanguageToggle() {
   const { i18n } = useTranslation()
-  const router = useRouter()
-  const pathname = usePathname()
 
   const currentLang = i18n.language?.startsWith('zh') ? 'zh' : 'en'
 
@@ -19,19 +17,10 @@ export default function LanguageToggle() {
     
     // Persist the language preference
     localStorage.setItem('i18nextLng', newLang)
+    document.cookie = `i18next=${newLang}; path=/; max-age=31535400`
     
-    // Update URL with new language
-    if (!pathname) return
-    
-    const segments = pathname.split('/')
-    if (segments[1] === 'en' || segments[1] === 'zh') {
-      segments[1] = newLang
-    } else {
-      segments.splice(1, 0, newLang)
-    }
-    
-    router.push(segments.join('/') || '/')
-    router.refresh()
+    // Change language without URL change
+    i18n.changeLanguage(newLang)
   }
 
   return (
